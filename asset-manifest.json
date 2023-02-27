@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/stone-paper-scissor/static/css/main.e9ba332d.css",
+    "main.js": "/stone-paper-scissor/static/js/main.8107f345.js",
+    "static/js/787.f6d19ca6.chunk.js": "/stone-paper-scissor/static/js/787.f6d19ca6.chunk.js",
+    "static/media/background.jpg": "/stone-paper-scissor/static/media/background.fd80e42996590aeb0c06.jpg",
+    "static/media/confetti-unscreen.gif": "/stone-paper-scissor/static/media/confetti-unscreen.07b166785a9bf6ac3400.gif",
+    "static/media/rrock.png": "/stone-paper-scissor/static/media/rrock.de385707dd42ad6eb3ae.png",
+    "static/media/rpaper.png": "/stone-paper-scissor/static/media/rpaper.23c25017de2b34c31bf5.png",
+    "static/media/rscissor.png": "/stone-paper-scissor/static/media/rscissor.8c9c4e9e24c310bcd9e0.png",
+    "static/media/paper.png": "/stone-paper-scissor/static/media/paper.e22e5bedf06f535bb6b0.png",
+    "static/media/rock.png": "/stone-paper-scissor/static/media/rock.f34d75e861b5ad90a493.png",
+    "static/media/scissor.png": "/stone-paper-scissor/static/media/scissor.559d5d113aefdfa223b0.png",
+    "index.html": "/stone-paper-scissor/index.html",
+    "main.e9ba332d.css.map": "/stone-paper-scissor/static/css/main.e9ba332d.css.map",
+    "main.8107f345.js.map": "/stone-paper-scissor/static/js/main.8107f345.js.map",
+    "787.f6d19ca6.chunk.js.map": "/stone-paper-scissor/static/js/787.f6d19ca6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e9ba332d.css",
+    "static/js/main.8107f345.js"
+  ]
+}
