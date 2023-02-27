@@ -1,0 +1,237 @@
+body{
+    /* background-color: #f3f1dd; */
+    background: url('./Resources/background.jpg');
+    background-size: cover;
+    background-blend-mode: color;
+    background-color: #fffac7dc;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 150px;
+}
+.container img{
+    width: 50%;
+}
+.container .player img{
+    transform: rotateY(180deg) rotate(-100deg);
+    animation-duration: 0.7s;
+    animation-iteration-count: 3;
+}
+.container .computer img{
+    animation-duration: 0.7s;
+    animation-iteration-count: 3;
+}
+@keyframes computer-animation {
+    0% {
+        transform:  rotate(-100deg) translateX(0px);
+    }
+    25%{
+        transform:  rotate(-70deg) translateX(20px);
+    }
+}
+@keyframes player-animation {
+    0% {
+        transform: rotateY(180deg) rotate(-100deg) translateX(0px);
+    }
+    25%{
+        transform: rotateY(180deg) rotate(-70deg) translateX(20px);
+    }
+}
+.container .computer img{
+    transform: rotate(-100deg);
+}
+.container .section{
+    width: 40%;
+    text-align: center;
+}
+
+.buttons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+    /* background-color: black; */
+    margin: auto;
+}
+.buttons .computermessage{
+    width: 40%;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: bolder;
+}
+.buttons .btn{
+    padding: 5px 10px;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    margin-right: 30px;
+    border-radius: 10px;
+    border: solid 2px #303030;
+}
+.icon{
+    display: inline;
+    vertical-align: bottom;
+}
+
+.scoreBar{
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    margin: auto;
+    position: absolute;
+    top: 10%;
+    left: 20%;
+}
+.scoreBar .Score{
+    text-align: center;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+.message{
+    display: none;
+    font-size: 2rem;
+    text-align: center;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    background-color: white;
+    border: solid 5px #202020;
+    padding: 15px;
+    border-radius: 15px;
+}
+.restartBtn{
+    display: none;
+    position: absolute;
+    bottom: 15%;
+    left: 43%;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    padding: 10px;
+    border: solid 3px black;
+    border-radius: 10px;
+    background-color: #ffffff85;
+    backdrop-filter: blur(5px); 
+}
+.winmessage{
+    display: none;
+    position: absolute;
+    top: 15%;
+    font-size: 1.4rem;
+    border-radius: 10px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #ffffff44;
+    backdrop-filter: blur(5px);
+    padding: 15px;
+    border: solid 3px #000000;
+
+}
+#confetti{
+    display: none;
+    position: absolute;
+    top: 0%;
+    width: 30%;
+}
+.playGame{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 20;
+    padding: 10px;
+    font-size: 1.4rem;
+    border: solid 3px black;
+    border-radius: 10px;
+    background-color: #ffffff4d;
+    backdrop-filter: blur(15px);
+}
+
+
+@media only screen and (max-width: 600px) {
+    body{
+        transform: rotate(90deg);
+    }
+   .container{
+        width: 160%;
+        margin-top: 100px;
+        justify-content: space-between;
+   }
+   .container .player{
+    margin-left: -20px;
+   }
+   .container .section{
+        width: 35%;
+   }
+   .container img{
+        width: 100%;
+   }
+   .buttons{
+        width: 160%;
+        position: absolute;
+        bottom: -5%;
+   }
+   .buttons .btn{
+    margin-right: 10px;
+   }
+   .scoreBar{
+        display: flex;
+        justify-content: space-between;
+        width: 140%;
+        margin: auto;
+        position: absolute;
+        top: -5%;
+        left: 10%;
+    }
+    .scoreBar .Score{
+        text-align: center;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        font-weight: bolder;
+    }
+    .message{
+        text-transform: uppercase;
+        top: 2%;
+        left: 80%;
+        width: 250px;
+        background-color: #ffffff60;
+        backdrop-filter: blur(20px);
+        font-size: 1.4rem;
+        padding: 10px;
+        border: solid 3px black;
+    }
+    .restartBtn{
+        position: absolute;
+        bottom: 5%;
+        left: 57%;
+        font-size: 1.5rem;
+        font-weight: bolder;
+        padding: 10px;
+    }
+    .winmessage{
+        top: 10%;
+        width: 300px;
+        text-align: center;
+        left: 75%;
+    }
+    #confetti{
+        top: -15%;
+        left: 23%;
+        width: 100%;
+    }
+    .playGame{
+        position: absolute;
+        top: 50%;
+        left: 77%;
+        width: 200px;
+        transform: translate(-50%, -50%);
+        z-index: 20;
+        padding: 10px;
+        font-size: 1.4rem;
+        border: solid 3px black;
+        border-radius: 10px;
+    }
+}
